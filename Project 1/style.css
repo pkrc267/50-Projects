@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box; /*add any padding/border to any element then it wont affect width of element*/
+}
+
+body {
+    align-items: center;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    height: 100vh; /*take height of entire viewport*/
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 90vw; /*out of 100 slices of viewport, we're taking 90*/
+}
+
+.panel {
+    background-size: auto 100%;
+    /* background-size: cover; -->to preserve rounded corners on large screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 5rem;
+    color: white;
+    cursor: pointer;
+    flex: 0.5; /*initially all are even width, but change this when active class is applied, and put larger value like 5, so the active element looks bigger than the rest*/
+    margin: 1rem;
+    position: relative;
+    transition: flex 0.7s ease-in; /*transition on flex property with a duration of 0.7 sec, with ease-in effect*/
+}
+
+.panel h3 {
+    font-size: 2.4rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    margin: 0rem;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.5s;
+}
+
+/* when screen is very small, show only 3 out of 5 cards */
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4), .panel:nth-of-type(5) {
+        /* catches the 4th and 5th element with class panel */
+        /* read it as: 4th of type panel, 5th of type panel */
+        display: none;
+    }
+}
+
