@@ -7,6 +7,6 @@ Hi. This repo is all about miniprojects on HTML, CSS & vanilla JS to offer great
 - ESLint
 - Auto Rename Tag extension
 
-| # | Project |
-| ------ | ------ |
-| 1 | [Expanding Cards](https://github.com/pkrc267/50-Projects/tree/master/Project-1) |
+| # | Project | Demo |
+| ------ | ------ | ------ |
+| 1 | [Expanding Cards](https://github.com/pkrc267/50-Projects/tree/master/Project-1) | [Codepen demo](https://codepen.io/pkrc267/full/bGqjROE) |
