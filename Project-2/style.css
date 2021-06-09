@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+/* defining variables for colors */
+:root {
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box; /*add any padding/border to any element then it wont affect width of element*/
+}
+
+body {
+    align-items: center;
+    background-color: #f6f7fb;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /*take height of entire viewport*/
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+/* container for all the flexed elements: progress stage numbers, progress stage circles & progress line */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+/* grey background for the progress line */
+.progress-container::before {
+    content: ''; /*use this with ::before & ::after otherwise the thing won't appear*/
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-35%); /*move the vertical index up by 50% to keep middle of the line in the middle*/
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+/* the actual progress line in blue */
+.progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-35%); /*move the vertical index up by 50% to keep middle of the line in the middle*/
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: .4s ease;
+}
+
+.circle {
+    background-color: white;
+    color: #999;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    /* below to display numbers in the center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: .4s ease;
+}
+
+/*  */
+.circle.active {
+    border-color: var(--line-border-fill);
+}
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.btn:active {
+    /* change the size of the button just a bit when clicked*/
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
