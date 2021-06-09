@@ -10,4 +10,4 @@ Hi. This repo is all about miniprojects on HTML, CSS & vanilla JS to offer great
 | # | Project | Demo |
 | ------ | ------ | ------ |
 | 1 | [Expanding Cards](https://github.com/pkrc267/50-Projects/tree/master/Project-1) | [Codepen demo](https://codepen.io/pkrc267/full/bGqjROE) |
-| 2 | [Progress Steps](https://github.com/pkrc267/50-Projects/tree/master/Project-2) | [Codepen demo]() |
+| 2 | [Progress Steps](https://github.com/pkrc267/50-Projects/tree/master/Project-2) | [Codepen demo] |
