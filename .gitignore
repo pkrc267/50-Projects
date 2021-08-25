@@ -1,0 +1,4 @@
+# don't push node modules
+node_modules/
+package-lock.json
+package.json

@@ -4,7 +4,7 @@ Hi. This repo is all about miniprojects on HTML, CSS & vanilla JS to offer great
 ## Tools Used
 - VS Code
 - Live Server extension
-- ESLint
+- ESLint (using Airbnb coding standard with customization. Check .eslintrc.json for rule-overrides)
 - Auto Rename Tag extension
 
 | # | Project | Demo |
