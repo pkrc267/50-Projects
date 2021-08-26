@@ -16,4 +16,4 @@ Hi. This repo is all about miniprojects on HTML, CSS & vanilla JS to offer great
 | 5 | [Blurry Loading](https://github.com/pkrc267/50-Projects/tree/master/Project-5) | demo awaited |
 
 ### AdHoc Project
-- [Column Navigation](https://github.com/pkrc267/50-Projects/tree/master/grid-offset): example of grid offset calculation.
+- [Column Navigation](https://github.com/pkrc267/50-Projects/tree/master/grid-offset): example of column navigation in grid through offset calculation.
