@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+* {
+    box-sizing: border-box; /*add any padding/border to any element then it wont affect width of element*/
+}
+
+body {
+    /* align-items: center; */
+    font-family: 'Roboto', sans-serif;
+    /* display: flex; */
+    /* flex-direction: column; */
+    height: 100vh; /*take height of entire viewport*/
+    /* justify-content: center; */
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    row-gap: 5rem;
+    column-gap: 5rem;
+    background-color: grey;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-item {
+    margin: 1em;
+    background-color: yellowgreen;
+    width: initial;
+    height: initial;
+    padding: 4rem;
+    margin: 2rem;
+}
+
+.grid-item li {
+    list-style-type: none;
+    margin: 1rem;
+}
