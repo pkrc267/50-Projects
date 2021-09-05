@@ -1,6 +1,7 @@
 **Description:**
  - Example of column navigation in grid through offset calculation.
  - Has column navigation through up & down arrow keys that bypasses tab order.
+ - live Demo: https://pkrc267.github.io/50-Projects/grid-offset/
 ---
 **WHAT WORKS:**
 
